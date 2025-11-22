@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>支持与帮助 | Support</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "PingFang SC", "Microsoft YaHei", sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      margin-top: 1.2em;
+    }
+    .lang-toggle {
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+    .lang-toggle a {
+      margin-right: 10px;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+    .en { display: none; }
+  </style>
+  <script>
+    function showLang(lang) {
+      document.querySelectorAll('.zh, .en').forEach(function(el) {
+        el.style.display = 'none';
+      });
+      document.querySelectorAll('.' + lang).forEach(function(el) {
+        el.style.display = 'block';
+      });
+    }
+    window.onload = function() {
+      showLang('zh');
+    };
+  </script>
+</head>
+<body>
+  <div class="lang-toggle">
+    语言 / Language:
+    <a onclick="showLang('zh')">中文</a>
+    <a onclick="showLang('en')">English</a>
+  </div>
+
+  <!-- 中文版本 -->
+  <div class="zh">
+    <h1>支持与帮助</h1>
+    <p>感谢您使用本 App！如果您在使用过程中遇到任何问题、发现 Bug，或有功能建议，欢迎随时与我们联系。</p>
+
+    <h2>联系我们</h2>
+    <p>📧 电子邮箱：<a href="mailto:pellet08@gmail.com">pellet08@gmail.com</a></p>
+
+    <h2>我们可以为您提供的帮助</h2>
+    <ul>
+      <li>App 使用相关问题解答</li>
+      <li>Bug 反馈与问题排查</li>
+      <li>功能建议与优化意见</li>
+      <li>其他与本 App 相关的支持</li>
+    </ul>
+
+    <p>我们会尽可能在合理的时间内回复您的邮件，感谢您的理解与支持！</p>
+  </div>
+
+  <!-- English Version -->
+  <div class="en">
+    <h1>Support & Help</h1>
+    <p>Thank you for using this App! If you encounter any issues, find bugs, or have feature suggestions, please feel free to contact us.</p>
+
+    <h2>Contact Us</h2>
+    <p>📧 Email: <a href="mailto:pellet08@gmail.com">pellet08@gmail.com</a></p>
+
+    <h2>How We Can Help</h2>
+    <ul>
+      <li>Answer questions about how to use the App</li>
+      <li>Receive bug reports and investigate issues</li>
+      <li>Collect feature requests and improvement ideas</li>
+      <li>Provide other support related to the App</li>
+    </ul>
+
+    <p>We will do our best to respond to your email in a reasonable time. Thank you for your support!</p>
+  </div>
+</body>
+</html>
